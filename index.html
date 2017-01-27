@@ -14,38 +14,43 @@
   body {
     background-image: url("images/bg.png");
     background-repeat: repeat;
-}
-</style>
+	}
+	</style>
 </head>
+
+
 <body>
 
+<!-- NAT: menu superior-->
+<header>
+	<div class="contenedor">
+		<div class="logo">
+			<img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt="">
+		</div>
+		<nav class="menu">
+			<ul>
+				<li>
+					<img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt="" height="40px" />
+				</li>
+		        <li>
+		            <a href="index.html">Home</a>
+		        </li>
+		        <li>
+		            <a href="about.html">About</a>
+		        </li>
+		        <li>
+		            <a href="blog.html">Blog</a>
+		        </li>
+		        <li>
+		            <a href="contact.html">Contact</a>
+		        </li>
+		    </ul>
+		</nav>
+	</div>
+</header>
+<!-- fi menu superior -->
 
-
-<div id="display">
-
-</div>
-
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="about.html">About</a>
-        </li>
-        <li>
-            <a href="blog.html">Blog</a>
-        </li>
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-    </ul>
-</div>
-<!-- /.navbar-collapse -->
-</div>
-
-    <div class="container">
+<div class="contenedor">
 
     <div class="row">
         <div class="box">
@@ -124,8 +129,8 @@
         </div>
     </div>
 
-  </div>
-  <!-- /.container -->
+</div>
+<!-- /.container -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -137,6 +142,21 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    </script>
+
+    <!--NAT: script para el menu fijo -->
+    <script>
+    $(document).ready(function(){
+		var altura = $('.menu').offset().top;
+	
+		$(window).on('scroll', function(){
+			if ( $(window).scrollTop() > altura ){
+				$('.menu').addClass('menu-fixed');
+			} else {
+				$('.menu').removeClass('menu-fixed');
+			}
+		});
+	});
     </script>
 
 
