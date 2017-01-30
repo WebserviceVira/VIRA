@@ -1,4 +1,9 @@
 
+#body {
+  background-image: url("images/bg.png");
+  background-repeat: repeat;
+}
+
 #clickButton{
   background-color: powderblue;
   color: blue;
@@ -10,4 +15,28 @@
   width: 500px;
   height: 500px;
   margin: ;
+  }
+
+  .teamsContainer {
+      display: -webkit-flex;
+      display: flex;
+      margin:auto;
+      margin-right: 3%;
+      margin-left: 3%;
+      height: 250px;
+      position: sticky; center;
+  }
+
+  .teamsLol {
+
+      margin: auto;
+      margin-right: 3%;
+      margin-left: 3%;
+
+  }
+
+  .teamsCsgo {
+      margin: auto;
+      margin-right: 3%;
+      margin-left: 3%;
   }
