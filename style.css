@@ -17,6 +17,7 @@
   margin: ;
   }
 
+
   .teamsContainer {
       display: -webkit-flex;
       display: flex;
@@ -40,3 +41,13 @@
       margin-right: 3%;
       margin-left: 3%;
   }
+
+.imageBloodyWolves{
+  width: 600px;
+  height: 430px;
+  position: relative;
+  margin: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
