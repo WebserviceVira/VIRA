@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" href="images/logo2_purple.png">
+    <title>Bloody Wolves</title>
+   	
+   	<link href="pruebas_css.css" rel="stylesheet">
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   	<!--menu relativo-->
+	<script>
+	$(function() {
+	    var pull = $('#pull');
+	    var press=0;
+	    menu = $('nav ul');
+	    menuHeight = menu.height();
+
+	    $(pull).on('click', function(e) {
+	    	e.preventDefault();
+	    	menu.slideToggle();
+	    });
+	});
+
+	$(window).resize(function(){
+	    var w = $(window).width();
+	    if(w > 320 && menu.is(':hidden')) {
+	        menu.removeAttr('style');
+	    }
+	});
+	</script>
+	<!--Menu fijo-->
+	<script>
+    $(document).ready(function(){
+        var altura = $('.menu').offset().top;
+
+        $(window).on('scroll', function(){
+            if ( $(window).scrollTop() > altura ){
+                $('.menu').addClass('menu-fixed');
+            } else {
+                $('.menu').removeClass('menu-fixed');
+            }
+        });
+    });
+    </script>
+</head>
+
+<body>
+	<header>
+	<div class="menu">
+		<table class="menu_table">
+			<tr>
+				<td class="menu_social" colspan="7">
+					<img src="images/fb_white.png" />
+					<img src="images/twitch_white.png" />
+					<img src="images/twitter_white.png" />
+					<img src="images/youtube_white.png" />
+					<img src="images/insta_white.png" />
+				</td>
+			</tr>
+			<tr>
+				<td class="menu_logo">
+					<img src="images/logo2.png">
+				</td>
+				<td class="menu_option">
+					<nav>
+						<a id="pull" href="#"></a>
+						<ul>
+					        <li><a href="index.html">HOME</a></li>
+					        <li><a href="history.html">NOSOTROS</a></li>
+					        <li><a href="teams.html">TEAMS</a></li>
+					        <li><a href="contact.html">CONTACTO</a></li><br clear="all" />
+					    </ul>
+					</nav>
+                </td>				
+			</tr>
+		</table>
+		
+	</div>
+
+<script type="text/javascript">
+
+</script>
+</body>
+
+</html>

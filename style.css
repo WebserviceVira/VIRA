@@ -79,48 +79,66 @@
 
 /*NAT: menu superior*/
 
-.contenedor {
+.menu_div {
     width: 95%;
-    max-width:1000px;
+    max-width:100%;
+    background: rgba(255, 255, 255, 0.3)
     margin:auto;
 }
-
-.contenedor p {
-    margin-bottom:40px;
-}
-
-header nav {
-    background:black;
-    margin-bottom:10px;
-}
-
-header nav ul {
-    list-style: none;
-    overflow: hidden;
-}
-
-header nav ul li {
-    float: left;
-}
-
-header nav ul li a {
-    display: block;
-    padding:57px;
-    color:#fff;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    background:#2980b9;
-}
-
 
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
 .menu-fixed {
     position:fixed;
     z-index:1000;
     top:0;
-    max-width:1000px;
+    margin:0;
+    padding:0;
+    border:0;
+    max-width:100%;
     width:100%;
+    background-color: black;
     box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
+
+
+.menu_sup_social{
+  float: right;
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.menu_sup_social img{
+  height: 30px;
+  opacity: 1;
+}
+
+.menu_sup{
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top:10px; 
+}
+
+.menu_sup ul {
+    list-style: none;
+    overflow: hidden;
+    border: red 5px solid;
+}
+
+.menu_sup ul li {
+    float: left;
+    border: yellow 5px solid;
+}
+
+.menu_sup ul li a {
+    display: block;
+    padding:20px;
+    color:#fff;
+    text-decoration: none;
+    border: blue 5px solid;
+}
+
+.menu_sup ul li a:hover {
+    background:#2980b9;
+}
+
+

@@ -1,0 +1,253 @@
+body{
+    background-image: url("images/bg.png");
+    background-repeat: repeat;
+}
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu_table{
+    width: 100%;
+}
+
+.menu_social{
+    text-align:right;
+    width: 100%;
+}
+
+.menu_social img{
+    height: 30px;
+    padding: 1px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.menu_social img:hover{
+    background:#970666;
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.menu_logo{
+    width: 30%;
+    height: 50px;
+    text-align: right;
+    padding-right: 5%;
+    background: #970666;
+    /*clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);*/
+    clip-path: polygon(0% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.menu_logo img{
+    height: 50px;
+    align:center;
+}
+
+.menu_option{
+    padding:0; 
+    width: 70%;
+    text-align: center;
+}
+
+
+/* Clearfix */
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+a#pull {
+    display: none;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline;
+    float: left;
+    padding-left: 5%;
+}
+
+nav a {
+    display: inline-block;
+    text-align: center;
+    
+}
+
+nav li a {
+    color: #FFF;
+    display: inline-block;
+    text-align: center;
+    font-family: "Impact";
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 3px;
+    padding-left: 3px;
+
+    /*-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;*/
+
+}
+
+nav li:last-child a {
+    border-right: 0;
+}
+
+nav a:hover{
+    background-color: #970666;
+    padding: 20px;
+    /*border: 10px solid #970666;
+    border-radius: 50%;*/
+}
+nav a:active {
+    background-color: #970666;
+}
+
+/*MEDIA PANTALLA*/
+@media only screen and (max-width : 650px) {
+    nav li a {
+        color: #FFF;
+        display: inline-block;
+        text-align: center;
+        font-family: "Impact";
+        text-decoration: none;
+        font-size: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 3px;
+        padding-left: 3px;
+
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+
+    nav li a:hover{
+        /*background: #970666;*/
+        border: 10px solid #970666;
+        border-radius: 50%;
+    }
+    .menu_social img{
+        height:25px;
+        padding: 1px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .menu_social img:hover{
+        background:#970666;
+        border-radius: 50%;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
+/*MOBILE*/
+@media only screen and (max-width : 500px) {
+    nav {
+        border-bottom: 0;
+        height: auto;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+        width: 100%;
+    }
+
+    nav li {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+        /*text-indent: 25px;*/
+
+    }
+
+    nav a#pull {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    nav a#pull:after {
+        content:"";
+        background: url('images/menu_button_purple.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+    }
+    nav a:hover{
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+    }
+    nav a:active {
+        background: transparent;
+    }
+
+    .menu_social img{
+        height:25px;
+        padding: 1px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .menu_social img:hover{
+        background:#970666;
+        border-radius: 50%;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
