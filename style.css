@@ -1,10 +1,28 @@
+@font-face{
+	font-family:'code-Light';
+	src: url('fonts/codeLight.ttf') format('truetype'); 
+}
 
-#body {
+@font-face{
+	font-family:"code-Bold";
+	src: url("fonts/codeBold.ttf") format('truetype');
+}
+
+@font-face{
+	font-family:"g-h-r";
+	src: url("fonts/glyphicons-halflings-regular.ttf") format('truetype');
+}
+
+h1{
+  font-family: 'code-Light';
+}
+
+body {
   background-image: url("images/bg.png");
 }
 
 #clickButton{
-  background-color: powderblue;
+  background-color: blue;
   color: blue;
   color: red;
 }
