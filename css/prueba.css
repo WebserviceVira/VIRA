@@ -1,0 +1,38 @@
+.clear{
+    clear: all;
+}
+
+.blog{
+    border: 2px solid blue;
+}
+.notice{
+    border:2px red solid;
+    width: 45%;
+    background-color: white;
+    float: left;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.notice div p{
+    background-color: red;
+    padding: 0;
+    margin: 0;
+}
+
+.notice h1,h2,h3,h4,h5{
+    color: black;
+    font-family: "Impact";
+}
+
+.notice p{
+    color:black;
+    font-family: "Impact";
+}
+
+.notice img{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
