@@ -8,11 +8,6 @@
     src: url(fonts/codeBold.otf) format("opentype");
 }
 
-@font-face{
-	font-family:"g-h-r";
-	src: url("fonts/glyphicons-halflings-regular.ttf") format('truetype');
-}
-
 div h1,
 div h2,
 div h3,
@@ -109,7 +104,6 @@ body {
 .carousel .item img{
   margin: 0 auto; /* Align slide image horizontally center */
 }
-
 .content{
   margin: 0;
   margin-left: 16%;
@@ -119,7 +113,7 @@ body {
 }
 .content p,h1,h2,h3,h4,h5{
   color: white;
-  font-family: 'Impact';
+  font-family: 'codeLight';
   text-align: justify;
 }
 .content input{
@@ -136,6 +130,7 @@ body {
   border: 2px;
   border-radius: 25px;
   background: linear-gradient(to right bottom, rgba(177, 1, 105, 1) -110%, rgba(0, 0, 0, 0) 99%);
+  /*border:5px white double;*/
   /*background-image:
     linear-gradient(
       to bottom right,
@@ -144,6 +139,26 @@ body {
     );
   */
 }
+.content_title{
+  background: #970666;
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  /*clip-path: polygon(0% 0, 100% 0%, 90% 100%, 0% 100%);*/
+}
+.content_title h1,h2,h3,h4,h5{
+    text-align: center;
+    padding: 3px;
+    color: white;
+    font-family: "codeBold";
+}
+.content_text p{
+  font-size: 18px;
+}
+.content_text p i{
+  font-size: 15px;
+}
+
 #divTeams{
  display: inline;
 }
+
+
