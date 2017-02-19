@@ -23,6 +23,20 @@
     <script src="js/jquery.js"></script>
 		<script src="js/teams.js"></script>
    	<!--menu relativo-->
+		<?php
+		switch ($_GET['c'])
+		{
+		   case '1':
+		      include("lol.html");
+		      break;
+		   case '2':
+		      include("site3.htm");
+		      break;
+		   case '3':
+		   default:
+		      include("site1.htm");
+		}
+?>
 	<script>
 		$(function() {
 		    var pull = $('#pull');
