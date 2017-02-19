@@ -1,11 +1,11 @@
-@font-face{
-	font-family:'code-Light';
-	src: url('fonts/codeLight.ttf') format('truetype'); 
+@font-face {
+    font-family: "codeLight";
+    src: url(fonts/codeLight.otf) format("opentype");
 }
 
-@font-face{
-	font-family:"code-Bold";
-	src: url("fonts/codeBold.ttf") format('truetype');
+@font-face {
+    font-family: "codeBold";
+    src: url(fonts/codeBold.otf) format("opentype");
 }
 
 @font-face{
@@ -13,12 +13,19 @@
 	src: url("fonts/glyphicons-halflings-regular.ttf") format('truetype');
 }
 
-h1{
-  font-family: 'code-Light';
+div h1,
+div h2,
+div h3,
+div h4,
+div h5,
+div p{
+  font-family: "codeLight";
 }
+
 
 body {
   background-image: url("images/bg.png");
+  background-repeat: no-repeat;
 }
 
 #clickButton{
@@ -31,7 +38,6 @@ body {
   background-image: url("images/backgrounb.jpeg");
   width: 500px;
   height: 500px;
-  margin: ;
   }
 
 
@@ -108,5 +114,36 @@ body {
   margin: 0;
   margin-left: 16%;
   margin-right: 16%;
-  margin-top: 3%; 
+  margin-top: 3%;
+  color: #b10f7a;
+}
+.content p,h1,h2,h3,h4,h5{
+  color: white;
+  font-family: 'Impact';
+  text-align: justify;
+}
+.content input{
+  color: black;
+}
+
+.contentIn {
+  border-radius: 25px;
+  padding-top : 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-spacing: 2px;
+  border: 2px;
+  border-radius: 25px;
+  background: linear-gradient(to right bottom, rgba(177, 1, 105, 1) -110%, rgba(0, 0, 0, 0) 99%);
+  /*background-image:
+    linear-gradient(
+      to bottom right,
+      black,
+      white
+    );
+  */
+}
+#divTeams{
+ display: inline;
 }

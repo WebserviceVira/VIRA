@@ -1,4 +1,5 @@
 -> indicar de alguna forma la pagina en la que estamos?
 -> icono pestaña
 -> orden logos sociales
--> 
+-> Foto para página. Nosotros.html
+-> Foto de los jugadores(parte Equipos).
