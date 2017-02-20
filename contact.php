@@ -65,11 +65,13 @@
 			<table class="menu_table">
 				<tr>
 					<td class="menu_social" colspan="7">
-						<img src="images/fb_white.png" />
-						<img src="images/twitch_white.png" />
-						<img src="images/twitter_white.png" />
-						<img src="images/youtube_white.png" />
-						<img src="images/insta_white.png" />
+						<a href="http://www.facebook.com/bloodywolvesclub"><img src="images/fb_white.png" /></a>
+						<a href="http://www.instagram.com/bloody_wolves_club"><img src="images/insta_white.png" /></a>
+						<a href="http://www.twitter.com/BloodyWolveClub"><img src="images/twitter_white.png" /></a>
+						<a href="http://www.twitch.tv/bloodywolvesclub"><img src="images/twitch_white.png" /></a>
+						<!-- youtube no creado
+						<a href="http://"><img src="images/youtube_white.png" /></a>
+						-->
 					</td>
 				</tr>
 				<tr>
@@ -82,11 +84,11 @@
 							<ul>
 						        <li><a href="index.html">HOME</a></li>
 						        <li><a href="history.html">NOSOTROS</a></li>
-						        <li><a href="teams.html">TEAMS</a></li>
-						        <li><a href="contact.html">CONTACTO</a></li><br clear="all" />
+						        <li><a href="teams.php">TEAMS</a></li>
+						        <li><a style="color:#b10f7a" href="contact.php">· CONTACTO ·</a></li><br clear="all" />
 						    </ul>
 						</nav>
-	                </td>
+	                </td>				
 				</tr>
 			</table>
 		</div>

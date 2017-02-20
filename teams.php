@@ -99,8 +99,8 @@
 							<ul>
 						        <li><a href="index.html">HOME</a></li>
 						        <li><a href="history.html">NOSOTROS</a></li>
-						        <li><a style="color:#b10f7a" href="teams.html">· TEAMS ·</a></li>
-						        <li><a href="contact.html">CONTACTO</a></li><br clear="all" />
+						        <li><a style="color:#b10f7a" href="teams.php">· TEAMS ·</a></li>
+						        <li><a href="contact.php">CONTACTO</a></li><br clear="all" />
 						    </ul>
 						</nav>
 	                </td>
