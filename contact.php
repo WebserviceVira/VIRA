@@ -13,6 +13,7 @@
    	<link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
    	<link href="style.css" rel="stylesheet">
 
    	<!--SCRIPTS-->
@@ -98,15 +99,27 @@
 				if ($action=="")    /* display the contact form */
 				    {
 				    ?>
-				    <form  action="" method="POST" enctype="multipart/form-data">
-				    <input type="hidden" name="action" value="submit">
-				    Tu name:<br>
-				    <input name="name" type="text" value="" size="30"/><br>
-				    Your email:<br>
-				    <input name="email" type="text" value="" size="30"/><br>
-				    Your message:<br>
-				    <textarea name="message" rows="7" cols="30"></textarea><br>
-				    <input type="submit" value="Send email"/>
+				    <form class="form-style-7" action="" method="POST" enctype="multipart/form-data">
+				    <ul>
+						<li>
+						    <label for="name">Nombre</label>
+						    <input type="text" name="name" maxlength="100">
+						    <span>Escribe tu nombre aquí</span>
+						</li>
+						<li>
+						    <label for="email">Email</label>
+						    <input type="email" name="email" maxlength="100">
+						    <span>Escribe una dirección de correo válida</span>
+						</li>
+						<li>
+						    <label for="message">Mensaje</label>
+						    <textarea size=500 rows="4" cols="50" name="message"></textarea>
+						    <span>Escribe tu mensaje</span>
+						</li>
+						<li>
+						    <input type="submit" value="Enviar Mensaje" >
+						</li>
+					</ul>
 				    </form>
 				    <?php
 				    }
@@ -127,6 +140,7 @@
 				        }
 				    }
 				?>
+
 	</div>
 
 </body>
