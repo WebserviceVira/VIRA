@@ -23,20 +23,7 @@
     <script src="js/jquery.js"></script>
 		<script src="js/teams.js"></script>
    	<!--menu relativo-->
-		<?php
-		switch ($_GET['c'])
-		{
-		   case '1':
-		      include("lol.html");
-		      break;
-		   case '2':
-		      include("site3.htm");
-		      break;
-		   case '3':
-		   default:
-		      include("site1.htm");
-		}
-?>
+
 	<script>
 		$(function() {
 		    var pull = $('#pull');
@@ -99,8 +86,8 @@
 							<ul>
 						        <li><a href="index.html">HOME</a></li>
 						        <li><a href="history.html">NOSOTROS</a></li>
-						        <li><a style="color:#b10f7a" href="teams.php">· TEAMS ·</a></li>
-						        <li><a href="contact.php">CONTACTO</a></li><br clear="all" />
+						        <li><a style="color:#b10f7a" href="teams.html">· TEAMS ·</a></li>
+						        <li><a href="contact.html">CONTACTO</a></li><br clear="all" />
 						    </ul>
 						</nav>
 	                </td>
@@ -108,27 +95,30 @@
 			</table>
 		</div>
 	</header>
-	<script>
-	function showme1(){
-		document.getElementById('divTexto').innerHTML = "<h4 style='font-family:'codeLight';'>STAFF</h4><h4>Departamento Técnico: Ramón García</h4>";
-
-	}
-	function showme2(){
-		document.getElementById('divTexto').innerHTML = 'CS GO';
-	}
-	function showme3(){
-		document.getElementById('divTexto').innerHTML = 'OVERWATCH';
-	}
-	</script>
 	<!--CONTENT-->
 	<div class="content">
-	    <div id='divTeams' class="contentIn">
-				<a href="teams.php?c=1"><img src="images/lolLogo.png" onclick='showme1();' width="30%;"/></a>
-				<img src="images/csgoLogo.png" onclick='showme2();' width="30%;"/>
-				<img src="images/owLogo.png" onclick='showme3();' width="30%;"/>
+	    <div id='teamsGames' class="contentIn">
+				<a href="teams.php?c=1"><img src="images/lolLogo.png"  width="30%;"/></a>
+				<a href="teams.php?c=2"><img src="images/csgoLogo.png" width="30%;"/><a/>
+				<a href="teams.php?c=3"><img src="images/owLogo.png"  width="30%;"/></a>
 	    </div>
-			<div id='divTexto'>
-				AQUI VA TODO
+			<div id='teamsNames'>
+				<?php
+				switch ($_GET['c'])
+				{
+					 case '1':
+							include("lol.html");
+							break;
+					 case '2':
+							include("csgo.html");
+							break;
+					 case '3':
+							include("ow.html");
+							break;
+							default:
+							include("teamsIntro.html");
+				}
+				?>
 			</div>
 
 	</div>
